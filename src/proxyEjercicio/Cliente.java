@@ -8,7 +8,7 @@ package proxyEjercicio;
 //	lo que tiene guardado en su cuenta del banco.
 
 public class Cliente {
-	public void main(String[] arg) {
+	public static void main(String[] args) {
 
 		RealTarjeta tarjeta = new RealTarjeta(new TarjetaDebito(100));
 
