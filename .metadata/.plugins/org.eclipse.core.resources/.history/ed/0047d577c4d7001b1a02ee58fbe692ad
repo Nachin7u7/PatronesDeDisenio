@@ -1,0 +1,7 @@
+package ejercicioVisitor;
+
+public interface Artefacto {
+
+	void show();
+
+}

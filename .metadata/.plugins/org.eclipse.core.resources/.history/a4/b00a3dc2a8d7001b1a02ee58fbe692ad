@@ -1,0 +1,18 @@
+package ejercicioBridge;
+
+public class InstalacionAgua implements Pago {
+	String nombre;
+	double precio;
+	Pago pago;
+
+	public InstalacionAgua(String nombre, double precio, Pago pago) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.pago = pago;
+	}
+
+	@Override
+	public void pagar(int precio) {
+		pago.pagar(precio);
+	}
+}

@@ -1,0 +1,5 @@
+package ejercicioComposite;
+
+public abstract class Disco {
+
+}

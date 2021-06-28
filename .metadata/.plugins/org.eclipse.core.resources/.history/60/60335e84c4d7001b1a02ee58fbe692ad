@@ -1,0 +1,7 @@
+package ejercicioVisitor;
+
+public interface Mantenimiento {
+
+	void mantenimiento(Artefacto celular);
+
+}

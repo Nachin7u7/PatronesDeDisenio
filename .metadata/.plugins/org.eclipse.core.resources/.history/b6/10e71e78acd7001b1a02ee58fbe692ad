@@ -1,0 +1,6 @@
+package ejercicioComposite;
+
+public abstract class Disco {
+	int palabras;
+	String contenido;
+}

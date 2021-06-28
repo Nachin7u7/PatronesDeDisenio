@@ -1,0 +1,7 @@
+package ejercicioBridge;
+
+public class PagoApp implements Pago {
+
+	
+	
+}

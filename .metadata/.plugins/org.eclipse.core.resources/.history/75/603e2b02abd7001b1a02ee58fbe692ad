@@ -1,0 +1,5 @@
+package ejercicioAdapter;
+
+public interface Empresa2 {
+
+}

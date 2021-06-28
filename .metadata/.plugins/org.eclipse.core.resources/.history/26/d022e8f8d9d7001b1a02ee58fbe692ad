@@ -1,0 +1,6 @@
+package ejercicioExtra;
+
+public interface Notificador {
+	void enviar(String mensaje);
+}
+© 2021 GitHub, Inc.

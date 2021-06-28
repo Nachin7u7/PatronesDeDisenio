@@ -1,0 +1,17 @@
+package ejercicioProxy;
+
+//(Proxy) Se tienen 2 servidores que son parte de un cluster donde en cada servidor se
+//tiene la misma aplicación web, se tiene configurado un proxy que va almacenando a los
+//usuarios que realizan login, todos los usuarios impares que ingresen con user y pwd
+//correctos son atendidos por el servidor1 y los usuarios impares son atendidos por el
+//servidor1.
+
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package ejercicioAdapter;
+
+public class WindowsPhone implements Empresa1 {
+
+	@Override
+	public void login() {
+		System.out.println("Login en WindowsPhone");
+	}
+
+	@Override
+	public void logout() {
+		System.out.println("Logout en web\");
+	}
+
+	@Override
+	public void reportes() {
+		System.out.println("Generando reportes en la aplicacion de WindowsPhone");
+	}
+}

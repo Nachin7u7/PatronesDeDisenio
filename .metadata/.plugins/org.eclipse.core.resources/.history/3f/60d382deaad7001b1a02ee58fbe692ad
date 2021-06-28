@@ -1,0 +1,25 @@
+package ejercicioAdapter;
+
+public class Adapter implements Empresa1 {
+	private Empresa2 iEmpresa2;
+
+	public Adapter(Empresa2 Empresa) {
+		System.out.println("La aplicacion de computador se adapta a una de celular ********");
+		this.iEmpresa2 = Empresa;
+	}
+
+	@Override
+	public void login() {
+		iEmpresa2.iniciarSesion();
+	}
+
+	@Override
+	public void logout() {
+		iEmpresa2.cerrarSesion();
+	}
+
+	@Override
+	public void reportes() {
+		iEmpresa2.generarDatos();
+	}
+}

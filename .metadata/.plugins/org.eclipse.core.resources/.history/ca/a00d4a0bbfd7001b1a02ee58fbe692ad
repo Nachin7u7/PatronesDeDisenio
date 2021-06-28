@@ -1,0 +1,35 @@
+package ejercicioProxy;
+
+//(Proxy) Se tienen 2 servidores que son parte de un cluster donde en cada servidor se
+
+//tiene la misma aplicación web, se tiene configurado un proxy que va almacenando a los
+//usuarios que realizan login, todos los usuarios impares que ingresen con user y pwd
+//correctos son atendidos por el servidor1 y los usuarios impares son atendidos por el
+//servidor1.
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Proxy proxy = new Proxy(new App(), new AplicacionWeb());
+
+		proxy.registrar("Carlos", "123456");
+		proxy.registrar("Manuel", "456789");
+		proxy.registrar("Adriana", "789123");
+		proxy.registrar("Alejandra", "147258");
+		proxy.registrar("Natalia", "258369");
+		proxy.registrar("Naomi", "369147");
+
+		proxy.login("Carlos", "123456");
+
+		proxy.login("Carlos", "123456");
+		proxy.login("Manuel", "456789");
+		proxy.login("Adriana", "789123");
+		proxy.login("Alejandra", "147258");
+		proxy.login("Natalia", "258369");
+		proxy.login("Naomi", "369147");
+
+	}
+
+}

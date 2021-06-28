@@ -1,0 +1,10 @@
+package ejercicioComposite;
+
+public abstract class Disco {
+	int palabras;
+	String contenido;
+	public void MostrarPalabras() {
+		// TODO Auto-generated method stub
+		
+	}
+}

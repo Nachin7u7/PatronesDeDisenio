@@ -1,0 +1,13 @@
+package ejercicioBridge;
+
+public class PagoApp implements Pago {
+
+	@Override
+	public void pagar(double monto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

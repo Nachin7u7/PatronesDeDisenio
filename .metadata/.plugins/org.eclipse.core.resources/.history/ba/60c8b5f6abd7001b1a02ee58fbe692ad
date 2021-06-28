@@ -1,0 +1,39 @@
+package ejercicioAdapter;
+
+//(Adapter) Se tiene un empresa que desarrolla aplicaciones móviles para Android,
+//IOS y WindowsPhone cuando se va desarrollando dichas aplicaciones estos
+//generalmente tienen los métodos de login, logout, reportes. Esta empresa compra otra
+//empresa que desarrolla aplicaciones Web y de Escritorio estas aplicaciones
+//generalmente tienen los métodos de iniciar sesión, cerrar sesión y generación de
+//datos,se desea adaptar las aplicaciones móviles de la empresa1 a la empresa2
+
+public class Cliente {
+	public static void main(String[] arg) {
+		 Android android = new Android();
+	        IOS ios = new IOS();
+	        WindowsPhone windowsPhone = new WindowsPhone();
+
+	        Adapter adapter = new Adapter(new Web());
+	        Adapter adapter1 = new Adapter(new Escritorio());
+
+	        android.login();
+	        android.logout();
+	        android.reportes();
+
+	        ios.login();
+	        ios.logout();
+	        ios.reportes();
+
+	        windowsPhone.login();
+	        windowsPhone.logout();
+	        windowsPhone.reportes();
+
+	        adapter.login();
+	        adapter.logout();
+	        adapter.reportes();
+
+	        adapter1.login();
+	        adapter1.logout();
+	        adapter1.reportes();
+	}
+}

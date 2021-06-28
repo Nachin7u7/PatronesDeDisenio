@@ -1,0 +1,9 @@
+package ejercicioAdapter;
+
+public interface Empresa1 {
+
+	void login();
+
+	
+	
+}
